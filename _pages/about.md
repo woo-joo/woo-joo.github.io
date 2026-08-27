@@ -127,6 +127,28 @@ latest_posts:
     opacity: 0.75;
   }
 
+  .wj-interest {
+    font-size: 1.02rem;
+    font-weight: 600;
+    letter-spacing: -0.005em;
+  }
+
+  .wj-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-top: 0.6rem;
+  }
+
+  .wj-chip {
+    padding: 0.2rem 0.7rem;
+    border: 1px solid var(--wj-line);
+    border-radius: 999px;
+    background: var(--wj-softer);
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+
   .wj-row {
     display: flex;
     justify-content: space-between;
@@ -301,14 +323,11 @@ latest_posts:
 
 <div class="wj-intro">
   <p>
-    I am a Ph.D. student in Computer Science and Engineering at <a href="https://www.postech.ac.kr/eng/">POSTECH</a>, where I am advised by
-    <a href="https://di.postech.ac.kr/di/mem/professor.do">Prof. HwanJo Yu</a> in the <a href="https://di.postech.ac.kr/">Data Intelligence Lab</a>. I received my
-    B.S. in Computer Science and Engineering from POSTECH in 2022.
+    I am a Ph.D. student in Computer Science and Engineering at POSTECH, where I am advised by
+    <a href="https://di.postech.ac.kr/di/mem/professor.do">Prof. HwanJo Yu</a> in the Data Intelligence Lab. I received my B.S. in Computer Science and
+    Engineering from POSTECH in 2022.
   </p>
-  <p>
-    My research focuses on information retrieval and recommender systems &mdash; in particular, sequential recommendation, LLM-enhanced recommendation,
-    and federated and continual recommendation.
-  </p>
+  <p>My research interest is Data Mining, in particular Information Retrieval, Recommender System, and Continual Learning.</p>
 </div>
 
 <div class="wj">
@@ -316,7 +335,14 @@ latest_posts:
 <section class="wj-card">
   <h2>Research Interests</h2>
   <ul class="wj-bullets">
-    <li>Information retrieval and recommendation system</li>
+    <li>
+      <span class="wj-interest">Data Mining</span>
+      <div class="wj-chips">
+        <span class="wj-chip">Information Retrieval</span>
+        <span class="wj-chip">Recommender System</span>
+        <span class="wj-chip">Continual Learning</span>
+      </div>
+    </li>
   </ul>
 </section>
 

@@ -6,8 +6,7 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: WooJoo
 middle_name:
 last_name: Kim
-contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+contact_note: # a little note shown next to the social icons; leave empty to hide it
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   WooJoo Kim is a Ph.D. student in Computer Science and Engineering at POSTECH, working on information retrieval and recommendation systems.
 footer_text: >

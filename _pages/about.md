@@ -31,8 +31,27 @@ latest_posts:
   }
 
   .wj,
-  .wj * {
+  .wj *,
+  .wj-intro,
+  .wj-intro * {
     font-family: inherit;
+  }
+
+  .wj-intro {
+    margin-top: 1.4rem;
+    font-size: 1.02rem;
+    line-height: 1.75;
+  }
+
+  .wj-intro p {
+    margin: 0 0 0.75rem;
+  }
+
+  .wj-intro a {
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 2.5px;
+    text-decoration-thickness: 1px;
   }
 
   .wj {
@@ -280,6 +299,18 @@ latest_posts:
   }
 </style>
 
+<div class="wj-intro">
+  <p>
+    I am a Ph.D. student in Computer Science and Engineering at <a href="https://www.postech.ac.kr/eng/">POSTECH</a>, where I am advised by
+    <a href="https://di.postech.ac.kr/di/mem/professor.do">Prof. HwanJo Yu</a> in the <a href="https://di.postech.ac.kr/">Data Intelligence Lab</a>. I received my
+    B.S. in Computer Science and Engineering from POSTECH in 2022.
+  </p>
+  <p>
+    My research focuses on information retrieval and recommender systems &mdash; in particular, sequential recommendation, LLM-enhanced recommendation,
+    and federated and continual recommendation.
+  </p>
+</div>
+
 <div class="wj">
 
 <section class="wj-card">
@@ -297,7 +328,7 @@ latest_posts:
         <div>
           <div class="wj-school">Pohang University of Science and Technology (POSTECH)<span class="wj-loc">, South Korea</span></div>
           <div class="wj-degree">Ph.D., Computer Science and Engineering</div>
-          <div class="wj-lab">Data Intelligence Lab (advisor: HwanJo Yu)</div>
+          <div class="wj-lab">Data Intelligence Lab (advisor: <a href="https://di.postech.ac.kr/di/mem/professor.do">HwanJo Yu</a>)</div>
         </div>
         <div class="wj-date">2022.09 – Present</div>
       </div>

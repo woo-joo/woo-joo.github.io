@@ -236,6 +236,35 @@ latest_posts:
     letter-spacing: -0.005em;
   }
 
+  .wj-pub-title a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .wj-pub-title a::after {
+    content: "↗";
+    content: "↗" / ""; /* decorative: hidden from screen readers where supported */
+    display: inline-block;
+    margin-left: 0.3em;
+    font-size: 0.85em;
+    font-weight: 500;
+    color: var(--wj-muted);
+    transition: color 0.15s ease;
+  }
+
+  .wj-pub-title a:hover,
+  .wj-pub-title a:focus-visible {
+    color: var(--wj-accent);
+    text-decoration: underline;
+    text-underline-offset: 2.5px;
+    text-decoration-thickness: 1px;
+  }
+
+  .wj-pub-title a:hover::after,
+  .wj-pub-title a:focus-visible::after {
+    color: var(--wj-accent);
+  }
+
   .wj-authors {
     margin-top: 0.28rem;
     font-size: 0.89rem;
@@ -393,7 +422,7 @@ latest_posts:
   <div class="wj-year">2026</div>
   <ul class="wj-pubs">
     <li class="wj-pub">
-      <div class="wj-pub-title">Personalized Federated Recommendation via Long-Horizon Local Optimization and Regularized Knowledge Guidance</div>
+      <div class="wj-pub-title"><a href="https://doi.org/10.1007/s10844-026-01089-w">Personalized Federated Recommendation via Long-Horizon Local Optimization and Regularized Knowledge Guidance</a></div>
       <div class="wj-authors">JaeHyung Lim, WonBin Kweon, <span class="wj-me">WooJoo Kim</span>, JunYoung Kim, DongHa Kim, HwanJo Yu</div>
       <div class="wj-venue"><span class="wj-tag">JIIS'26</span> Journal of Intelligent Information Systems</div>
     </li>
@@ -413,7 +442,7 @@ latest_posts:
       <div class="wj-venue"><span class="wj-tag">CIKM'26</span> ACM International Conference on Information and Knowledge Management</div>
     </li>
     <li class="wj-pub">
-      <div class="wj-pub-title">FLAME: Condensing Ensemble Diversity into a Single Network for Efficient Sequential Recommendation</div>
+      <div class="wj-pub-title"><a href="https://doi.org/10.1145/3805712.3809560">FLAME: Condensing Ensemble Diversity into a Single Network for Efficient Sequential Recommendation</a></div>
       <div class="wj-authors"><span class="wj-me">WooJoo Kim</span>, JunYoung Kim, JaeHyung Lim, SeongJin Choi, SeongKu Kang, HwanJo Yu</div>
       <div class="wj-venue"><span class="wj-tag">SIGIR'26</span> International ACM SIGIR Conference on Research and Development in Information Retrieval</div>
     </li>
@@ -422,7 +451,7 @@ latest_posts:
   <div class="wj-year">2025</div>
   <ul class="wj-pubs">
     <li class="wj-pub">
-      <div class="wj-pub-title">Federated Continual Recommendation</div>
+      <div class="wj-pub-title"><a href="https://doi.org/10.1145/3746252.3761268">Federated Continual Recommendation</a></div>
       <div class="wj-authors">JaeHyung Lim, WonBin Kweon, <span class="wj-me">WooJoo Kim</span>, JunYoung Kim, SeongJin Choi, DongHa Kim, HwanJo Yu</div>
       <div class="wj-venue"><span class="wj-tag">CIKM'25</span> ACM International Conference on Information and Knowledge Management</div>
     </li>
